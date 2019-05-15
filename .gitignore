@@ -19,6 +19,7 @@ pom.xml
 activemq-data/
 
 src/main/resources/config
+src/main/resources/config/*.properties
 classes/
 /build
 buildSrc/build
