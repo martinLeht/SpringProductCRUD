@@ -18,6 +18,7 @@ argfile*
 pom.xml
 activemq-data/
 
+src/main/resources/config
 classes/
 /build
 buildSrc/build
@@ -39,8 +40,7 @@ out
 test-output
 atlassian-ide-plugin.xml
 .gradletasknamecache
-=======
-# Compiled class file
+
 *.class
 
 # Log file
@@ -63,4 +63,3 @@ atlassian-ide-plugin.xml
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
->>>>>>> f324f49fd25fc5b40d2e1cf86a4819fc36476e85
