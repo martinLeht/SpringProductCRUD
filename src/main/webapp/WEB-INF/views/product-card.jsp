@@ -53,7 +53,7 @@
 		    
 	    
 			<!-- Search bar -->
-			<form:form action="search" method="POST" cssClass="form-inline">
+			<form:form action="${pageContext.request.contextPath}/search" method="POST" cssClass="form-inline">
 				<input type="text" name="searchName" placeholder="Search by name" class="form-control mr-sm-2" aria-label="Search" />
 				
 				<input class="btn btn-light my-sm-0" type="submit" value="Search"/>

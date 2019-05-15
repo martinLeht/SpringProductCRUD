@@ -11,9 +11,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.persistence.Version;
 import javax.validation.Valid;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Digits;
@@ -22,6 +19,8 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Table(name = "product")
@@ -54,6 +53,7 @@ public class Product {
 	private String addedBy;
 
 	@Column(name = "creation_datetime")
+	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
 	private Date createDateTime;
 
 	@Column(name = "last_updated")

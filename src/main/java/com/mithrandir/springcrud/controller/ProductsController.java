@@ -69,6 +69,7 @@ public class ProductsController {
 
 		// associating product and product details
 		product.setProductDetail(productDetail);
+		product.setCreateDateTime(new Date());
 		
 		// Set creation datetime
 		//product.setCreateDateTime(new Date());
@@ -127,6 +128,7 @@ public class ProductsController {
 			// calculate value in stock to product before saving
 			product.setValueInStock();
 
+			product.setUpdateDateTime(new Date());
 			productService.saveProduct(product);
 
 			return "redirect:/";

@@ -78,6 +78,8 @@
 				<!-- associate data with product id -->
 				<form:hidden path="id" />
 				
+				<form:input type="datetime" path="createDateTime"/>
+				
 				<div class="form-group row">
 				    <label for="nameInput" class="col-sm-2 col-form-label">Product name *:</label>
 				    <div class="col-sm-10">
